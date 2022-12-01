@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/news_item_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="4dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/news_title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="2"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            tools:text="Refactoring dependency injection from Spring to pure Kotlin in a small but somewhat realistic codebase" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/img_card"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="0dp">
+
+            <ImageView
+                android:id="@+id/news_image_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_launcher" />
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <TextView
+            android:id="@+id/news_subtitle_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="2"
+            tools:text="Refactoring dependency injection from Spring to pure Kotlin in a small but somewhat realistic codebase" />
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
